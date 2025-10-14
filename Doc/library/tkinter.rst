@@ -376,13 +376,13 @@ by spaces. Without getting into too many details, notice the following:
 
 * Widget classes are documented as commands (like ``ttk::frame``).
 
-* Keyword arguments are documented as the widget options of Tcl (like ``-text``).
+* Keyword arguments are documented as options (like ``-text``) of the commands. It may be under the section STANDARD OPTIONS.
 
-* The usage of object references are documented as pathname in Tcl (like ``.frm.btn``).
+* The usage of object references are documented as a pathname (like ``.frm.btn``).
 
-* The specification of the parent widget upon the creation of each child widget is documented as the pathname, which uses a ``.`` (dot) as a path separator. The pathname for the root window is documented as ``.`` (dot).
+* The definition of the widget hierarchy during the specification of the parent widget upon the creation of each child widget is documented as the pathname, which uses a ``.`` (dot) as a path separator. The pathname for the root window is documented as ``.`` (dot).
 
-* The methods of widget objects are documented as operations that are implemented as separate commands (like ``grid`` or ``destroy``); at other times what appears to be method calls.
+* The methods of widget objects are documented as operations that are implemented as separate commands (like ``grid`` or ``destroy``); at other times as what appears to be method calls.
 
 
 How do I...? What option does...?
