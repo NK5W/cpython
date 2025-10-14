@@ -387,18 +387,11 @@ by spaces. Without getting into too many details, notice the following:
 
 * Everything may be documented under the Python and Tcl/Tk versions corresponding to your particular installation.
 
-* Operations on widgets are documented in `Tk commands <https://www.tcl.tk/man/tcl8.6/TkCmd/contents.htm>`_. In Tcl, most operations that look like method calls are documented under the man page for the specific widget (e.g., you'll find the :meth:`invoke` method on the `ttk::button <https://www.tcl.tk/man/tcl8.6/TkCmd/ttk_button.htm>`_
-man page); functions that take a widget as a parameter often have their own man page (e.g.,
-`grid <https://www.tcl.tk/man/tcl8.6/TkCmd/grid.htm>`_).
+* Operations on widgets are documented in `Tk commands <https://www.tcl.tk/man/tcl8.6/TkCmd/contents.htm>`_. In Tcl, most operations that look like method calls are documented under the man page for the specific widget (e.g., you'll find the :meth:`invoke` method on the `ttk::button <https://www.tcl.tk/man/tcl8.6/TkCmd/ttk_button.htm>`_ man page); functions that take a widget as a parameter often have their own man page (e.g., `grid <https://www.tcl.tk/man/tcl8.6/TkCmd/grid.htm>`_).
 
-* Many common options and methods are documented in the
-`options <https://www.tcl.tk/man/tcl8.6/TkCmd/options.htm>`_ or
-`ttk::widget <https://www.tcl.tk/man/tcl8.6/TkCmd/ttk_widget.htm>`_ man
-pages; others under the man page for a specific widget class.
+* Many common options and methods are documented in the `options <https://www.tcl.tk/man/tcl8.6/TkCmd/options.htm>`_ or `ttk::widget <https://www.tcl.tk/man/tcl8.6/TkCmd/ttk_widget.htm>`_ man pages; others under the man page for a specific widget class.
 
-* Methods that have compound names; e.g.,
-:func:`winfo_x`, :func:`winfo_height`, :func:`winfo_viewable`; are documented under the
-`winfo <https://www.tcl.tk/man/tcl8.6/TkCmd/winfo.htm>`_ man page.
+* Methods that have compound names; e.g., :func:`winfo_x`, :func:`winfo_height`, :func:`winfo_viewable`; are documented under the `winfo <https://www.tcl.tk/man/tcl8.6/TkCmd/winfo.htm>`_ man page.
 
 * Behaviour of options and the options themselves are documented under the man pages.
 
