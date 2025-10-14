@@ -383,7 +383,7 @@ by spaces. Without getting into too many details, notice the following:
 
 * The definition of the widget hierarchy during the specification of the parent widget upon the creation of each child widget is documented as the pathname, which uses a ``.`` (dot) as a path separator. The pathname for the root window is documented as ``.`` (dot).
 
-* The methods of widget objects are documented as operations that are implemented as separate commands (like ``grid`` or ``destroy``); at other times as what appears to be method calls.
+* The methods of widget objects are documented as separate commands (like ``grid`` or ``destroy``); at other times as what appears to be method calls.
 
 * Everything may be documented under the Python and Tcl/Tk versions corresponding to your particular installation.
 
