@@ -374,26 +374,15 @@ Tcl's syntax is similar to many shell languages, where the first word is the
 command to be executed, with arguments to that command following it, separated
 by spaces. Without getting into too many details, notice the following:
 
-* The commands used to create widgets (like ``ttk::frame``) correspond to
-  widget classes in Tkinter.
+* Widget classes are documented as commands (like ``ttk::frame``).
 
-* Tcl widget options (like ``-text``) correspond to keyword arguments in
-  Tkinter.
+* Keyword arguments are documented as the widget options of Tcl (like ``-text``).
 
-* Widgets are referred to by a *pathname* in Tcl (like ``.frm.btn``),
-  whereas Tkinter doesn't use names but object references.
+* The usage of object references are documented as pathname in Tcl (like ``.frm.btn``).
 
-* A widget's place in the widget hierarchy is encoded in its (hierarchical)
-  pathname, which uses a ``.`` (dot) as a path separator. The pathname for
-  the root window is just ``.`` (dot). In Tkinter, the hierarchy is defined
-  not by pathname but by specifying the parent widget when creating each
-  child widget.
+* The specification of the parent widget upon the creation of each child widget is documented as the pathname, which uses a ``.`` (dot) as a path separator. The pathname for the root window is documented as ``.`` (dot).
 
-* Operations which are implemented as separate *commands* in Tcl (like
-  ``grid`` or ``destroy``) are represented as *methods* on Tkinter widget
-  objects. As you'll see shortly, at other times Tcl uses what appear to be
-  method calls on widget objects, which more closely mirror what would is
-  used in Tkinter.
+* The methods of widget objects are documented as operations that are implemented as separate commands (like ``grid`` or ``destroy``); at other times what appears to be method calls.
 
 
 How do I...? What option does...?
