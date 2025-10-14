@@ -348,6 +348,7 @@ event loop
 
 Tk Documentation
 ^^^^^^^^^^^^^^^^
+`Tk commands <https://www.tcl.tk/man/tcl8.6/TkCmd/contents.htm>`_
 
 When your application uses Tkinter's classes and methods, internally Tkinter
 is assembling strings representing Tcl/Tk commands, and executing those
@@ -384,6 +385,28 @@ by spaces. Without getting into too many details, notice the following:
 
 * The methods of widget objects are documented as operations that are implemented as separate commands (like ``grid`` or ``destroy``); at other times as what appears to be method calls.
 
+* Everything may be documented under the Python and Tcl/Tk versions corresponding to your particular installation.
+
+* Operations on widgets are documented in `Tk commands <https://www.tcl.tk/man/tcl8.6/TkCmd/contents.htm>`_. In Tcl, most operations that look like method calls are documented under the man page for the specific widget (e.g.,
+you'll find the :meth:`invoke` method on the
+`ttk::button <https://www.tcl.tk/man/tcl8.6/TkCmd/ttk_button.htm>`_
+man page); functions that take a widget as a parameter often have their own man page (e.g.,
+`grid <https://www.tcl.tk/man/tcl8.6/TkCmd/grid.htm>`_).
+
+* Many common options and methods are documented in the
+`options <https://www.tcl.tk/man/tcl8.6/TkCmd/options.htm>`_ or
+`ttk::widget <https://www.tcl.tk/man/tcl8.6/TkCmd/ttk_widget.htm>`_ man
+pages; others under the man page for a specific widget class.
+
+* Methods that have compound names; e.g.,
+:func:`winfo_x`, :func:`winfo_height`, :func:`winfo_viewable`; are documented under the
+`winfo <https://www.tcl.tk/man/tcl8.6/TkCmd/winfo.htm>`_ man page.
+
+When searching for how to use an API, it helps to know the exact name of the
+class, option, or method that you're using. Introspection, either in an
+interactive Python shell or with :func:`print`, can help you identify what
+you need.
+
 
 How do I...? What option does...?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -396,11 +419,6 @@ First, remember that the details of how individual widgets work may vary
 across different versions of both Tkinter and Tcl/Tk. If you're searching
 documentation, make sure it corresponds to the Python and Tcl/Tk versions
 installed on your system.
-
-When searching for how to use an API, it helps to know the exact name of the
-class, option, or method that you're using. Introspection, either in an
-interactive Python shell or with :func:`print`, can help you identify what
-you need.
 
 To find out what configuration options are available on any widget, call its
 :meth:`configure` method, which returns a dictionary containing a variety of
