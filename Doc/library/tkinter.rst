@@ -393,7 +393,11 @@ by spaces. Without getting into too many details, notice the following:
 
 * Methods that have compound names; e.g., :func:`winfo_x`, :func:`winfo_height`, :func:`winfo_viewable`; are documented under the `winfo <https://www.tcl.tk/man/tcl8.6/TkCmd/winfo.htm>`_ man page.
 
-* Behaviour of options and the options themselves are documented under the man pages.
+* Behaviours of options and the options themselves are documented under the man pages.
+
+* The "STANDARD OPTIONS" and "WIDGET SPECIFIC OPTIONS" for each widget are documented in the man pages as a list. Options that are common to many widgets are documented in the former list; idiosyncratic to that particular one in the latter. The Standard Options are documented on the :manpage:`options(3)` man page.
+
+* The options supported by a widget are documented under the man page for that widget as a list.
 
 When searching for how to use an API, it helps to know the exact name of the
 class, option, or method that you're using. Introspection, either in an
