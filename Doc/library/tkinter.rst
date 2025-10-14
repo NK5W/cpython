@@ -346,7 +346,7 @@ event loop
   isn't running the event loop, your user interface won't update.
 
 
-Understanding How Tkinter Wraps Tcl/Tk
+Tk Documentation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When your application uses Tkinter's classes and methods, internally Tkinter
