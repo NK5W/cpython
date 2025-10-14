@@ -402,6 +402,8 @@ pages; others under the man page for a specific widget class.
 :func:`winfo_x`, :func:`winfo_height`, :func:`winfo_viewable`; are documented under the
 `winfo <https://www.tcl.tk/man/tcl8.6/TkCmd/winfo.htm>`_ man page.
 
+* Behaviour of options and the options themselves are documented under the man pages.
+
 When searching for how to use an API, it helps to know the exact name of the
 class, option, or method that you're using. Introspection, either in an
 interactive Python shell or with :func:`print`, can help you identify what
